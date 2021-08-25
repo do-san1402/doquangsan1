@@ -1,0 +1,80 @@
+
+:root {
+    --main-color: #1cabe3;
+    --black-color: #333333;
+    --while-color: #fff;
+    --text-color: #e34e09;
+    --hoverText-color: rgb(235, 235, 235);
+    --box-shadow: 0 3px 3px -2px rgb(0 0 0 / 10%), 0 3px 4px 0 rgb(0 0 0 / 14%), 0 1px 8px 0 rgb(0 0 0 / 12%);
+    --fontSize-medium: 1.8rem;
+    --fontSize-small: 1.5rem;
+    --fontSize-verySmall: 1.3rem;
+    --fontSize-veryBig: 4rem;
+    --fontSize-Big: 2rem;
+    --bo-radius: 6px;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button,
+input {
+    border: none;
+}
+button {
+    cursor: pointer;
+}
+input {
+    outline: none;
+    cursor: pointer;
+}
+@keyframes fadeIn{
+    from {
+        opacity: 0.6;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+}
+/* =====================animation-hover======================== */
+.animation-hover {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.animation-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    transition: .2s linear;
+    width: 0%;
+    z-index: -1;
+}
+.animation-hover:hover::before {
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    left: 0;
+}
+.animation-hover:hover {
+    color: var(--while-color);
+}

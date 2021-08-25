@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="access/css/base.css">
+    <link rel="stylesheet" href="access/css/grid.css">
+    <link rel="stylesheet" href="access/css/style.css">
+    <link rel="stylesheet" href="access/css/responsive.css">
+    <link rel="stylesheet" href="access/font/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wed-app">
+        
+        <!-- =======================Befor Header=================== -->
+        <div class="header">
+            <div class="grid wide">
+                <div class="row header-sub">
+                    <div class="col l-2 m-12 c-12">
+                        <div class="header-logo">
+                            
+                            <img class="header-logo-img" src="access/img/logo-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- =====================NAV============================ -->
+                    <div class="col l-10 m-12 c-12 header-search-tablet-mobile">
+                        <div class="col l-12 m-0 c-0">
+                            <ul class="header-nav-list">
+                                <li class="l-2 header-nav-item animation-hover">
+                                    <a href="#trangchu" class="header-nav-link">TRANG CHỦ</a>
+                                    
+                                    
+                                </li>
+                                <li class="l-2 header-nav-item animation-hover">
+                                    <a href="#gioithieu" class="header-nav-link">GIỚI THIỆU</a>
+                                </li>
+                                <li class="l-2 header-nav-item animation-hover">
+                                    <a href="#tintuc" class="header-nav-link">TIN TỨC</a>
+                                </li>
+                                <li class="l-2 header-nav-item appear-overflow ">
+                                    <a href="" class="header-nav-link">KHÁM PHÁ</a>
+                                    <i class="fas fa-angle-down header-nav-icon "></i>
+                                    <ul class="header-nav-sublist">
+                                        <li class="header-nav-subitem">
+                                            <a href="#hoatdong" class="header-nav-sublink">Chúng tôi làm gì</a>
+                                        </li>
+                                        <li class="header-nav-subitem">
+                                            <a href="" class="header-nav-sublink">Nghiên cứu báo cáo</a>
+                                        </li>
+                                        <li class="header-nav-subitem">
+                                            <a href="" class="header-nav-sublink">Nơi hoạt động</a>
+                                        </li>
+                                        <li class="header-nav-subitem">
+                                            <a href="#khampha" class="header-nav-sublink">Liên kết</a>
+                                        </li>
+                                        <li class="header-nav-subitem">
+                                            <a href="" class="header-nav-sublink">Phó đại diện</a>
+                                        </li>
+                                        <li class="header-nav-subitem">
+                                            <a href="" class="header-nav-sublink">Trưởng đại diện</a>
+                                        </li>
+                                        <li class="header-nav-subitem">
+                                            <a href="#khampha" class="header-nav-sublink ">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="l-2 header-nav-item animation-hover">
+                                    <a href="#quyengop" class="header-nav-link header-nav-link__concact">QUYÊN GÓP</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-12 m-10 c-10 content-menu">
+                            <div class="content-search">
+                                <input type="text" class="content-search__input" placeholder="Nhập để tìm kiếm">
+                                <div class="content-search-history">
+                                    <h3 class="content-search-history__heading">
+                                        Lịch sử tìm kiếm
+                                    </h3>
+                                    <ul class="content-search-history__list">
+                                        <li class="content-search-history__item">
+                                            <a href="" class="content-search-history__link">Số lượng trẻ em bị nhiểm Covid-19</a>
+                                        </li>
+                                        <li class="content-search-history__item">
+                                            <a href="" class="content-search-history__link">giải pháp phòng dịch tốt nhất</a>
+                                        </li>
+                                        <li class="content-search-history__item">
+                                            <a href="" class="content-search-history__link">dấu hiện nhận biết covid-19 là gì ?</a>
+                                        </li>
+                                        <li class="content-search-history__item">
+                                            <a href="" class="content-search-history__link">cách sử lý khi trẻ em có dấu hiệu lạ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="content-search__button">
+                                    <i class="content-search__icon fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col l-0 m-2">
+                            <div class="header-nav-icon " id="nav-toggle" >
+                                <i class="fas fa-list-ul"></i>
+                            </div>
+                            <div class="overflay" id="overflay">
+
+                            </div>
+                            <div class="header-nav-table-mob" id="nav-table-mobile">
+                                <ul class="header-nav-table-mob-list">
+                                    <li class="header-nav-table-mob-item">
+                                        <a href="#trangchu" class="header-nav-table-mob-link animation-hover">TRANG CHỦ</a>
+                                    </li>
+                                    <li class="header-nav-table-mob-item">
+                                        <a href="#gioithieu" class="header-nav-table-mob-link animation-hover">GIỚI THIỆU</a>
+                                    </li>
+                                    <li class="header-nav-table-mob-item">
+                                        <a href="#tintuc" class="header-nav-table-mob-link animation-hover">TIN TỨC</a>
+                                    </li>
+                                    <li class="header-nav-table-mob-item">
+                                        <a href="" class="header-nav-table-mob-link animation-hover">KHÁM PHÁ</a>
+                                    </li>
+                                    <li class="header-nav-table-mob-item">
+                                        <a href="#quyengop" class="header-nav-table-mob-link animation-hover ">QUYÊN GÓP</a>
+                                    </li>
+                                    <li class="header-nav-table-mob-item">
+                                        <a href="#quyengop" class="header-nav-table-mob-link animation-hover ">CÀI ĐẶT</a>
+                                    </li>
+                                    <li class="header-nav-table-mob-item">
+                                        <a href="#quyengop" class="header-nav-table-mob-link animation-hover ">ĐĂNG XUẤT</a>
+                                    </li>
+                                </ul>
+                                <i class="fas fa-times header-nav-table-mob-close" id="nav-close"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <!-- ===============================AfterHeader======================== -->
+        <!-- ===============================Befor content========================= -->
+        <!-- Content -->
+        <div class="content">
+            <div class="grid wide">
+                
+            </div>
+            <div class="content-slide" id="trangchu"></div>
+        </div>
+        <!-- Content-gig -->
+        <div class="content-big">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="content-data" id="gioithieu">
+                            <div class="content-data__title">
+                                <h1 class="content-data__heading">
+                                    Tin tức mới nhất về COVID-19
+                                </h1>
+                                <div class="content-data__headingsub">
+                                    Lo ngại chủng Delta tấn công mạnh người trẻ tuổi
+                                </div>
+                            </div>
+                            <div class="content-data-para">
+                                <div class="content-data__lang">
+                                    Ngôn ngữ tài liệu bằng: English   <span class="content-data__lang__vietnamese">Tiếng Việt</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-2"></div>
+                                    <div class="col l-8 content-data__text">
+                                        MỸ-Hàng loạt cơ sở điều trị đang ghi nhận số lượng bệnh nhân trẻ tuổi tăng đột biến và tình trạng bệnh cũng trở nặng nhanh hơn trước đây.<br/><br/>
+
+                                        Gần đây, một bệnh nhân Covid-19 28 tuổi qua đời tại Trung tâm Y tế CoxHealth ở Springfield, bang Missouri. Tuần trước, một sinh viên đại học 21 tuổi phải nhập khoa chăm sóc tích cực.<br/><br/>
+
+                                        Nhiều bệnh nhân Covid-19 nhập viện không chỉ chưa được tiêm chủng mà còn có tuổi đời rất trẻ, một điểm khác biệt hoàn toàn so với xu hướng ở giai đoạn đại dịch bùng phát lần đầu hồi năm ngoái. Khi đó, những người nhập viện trong tình trạng nặng chủ yếu là bệnh nhân già yếu.<br/><br/>
+
+                                        Tại Baton Rouge, bang Louisiana, những người trẻ không có các yếu tố nguy cơ thông thường như tiểu đường hay béo phì cũng nhập khoa cấp cứu trong tình trạng nghiêm trọng. Không rõ vì sao họ lại bệnh nặng đến vậy.
+                                        Các bác sĩ làm việc tại những điểm nóng Covid-19 trên khắp nước Mỹ cho biết bệnh nhân tại bệnh viện của họ hiện nay không giống như năm ngoái. Hầu hết trẻ hơn, nhiều người ở độ tuổi 20, 30 và đều không tiêm vaccine. Họ dường như bệnh nặng hơn những bệnh nhân trẻ nhập viện năm ngoái, tình trạng bệnh xấu đi nhanh hơn.
+                                    </div>
+                                    <div class="col l-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <h1 class="content-news" id="tintuc">
+                            Cập nhập mới nhất về tình hình dịch bệnh COVID-19 ở Việt Nam
+                        </h1>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col l-9 m-12 c-12 content-news-large hiden-on-tablet-mobile">
+                        <div class="row" style="border: 2px solid var(--main-color); border-radius: 6px;">
+                            <div class="col l-9 m-9 c-9 content-news-large__img-dad">
+                                <div class="content-news-large__img" style="background-image: url(access/img/big-1.jpg)"></div>
+                            </div>
+                            <div class="col l-3 m-6 c-12 m-3 c-3">
+                                <div class="content-news-large__shared">
+                                    <div class="content-news-large__icon">
+                                        <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                                    </div>
+                                    <h3 class="content-news-large__heading">
+                                        Chính quyền chậm trễ, dân tự chạy xe máy về quê tránh dịch
+                                    </h3>
+                                    <div class="content-news-large__posts">
+                                        Trong những ngày gần đây, hình ảnh những đoàn người chạy xe máy rời TP HCM đã gây xôn xao dự luận. 
+                                        Rất nhiều người trong số này là người gốc Thừa Thiên-Huế đang sống tại TP HCM, 
+                                    </div>
+                                    <a href="" class="content-news-large__next">
+                                       <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                                    </a>
+                                </div>
+                            </div>
+.
+                        </div>
+                    </div>   
+                    <div class="col m-6 c-12 on-tablet-mobile hiden-pc">
+                        <div class="content-news-small ">
+                            <div class="content-news-small__img" style="background-image: url(access/img/big-1.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Chính quyền chậm trễ, dân tự chạy xe máy về quê tránh dịch
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__posts-sub">
+                                Trong những ngày gần đây, hình ảnh những đoàn người chạy xe máy rời TP HCM đã gây xôn xao dự luận. 
+                                Rất nhiều người trong số này là người gốc Thừa Thiên-Huế đang sống tại TP HCM, 
+                            </div>
+                            <a href="" class="content-news-small__next">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>   
+                    
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub-1">
+                            <div class="content-news-small__img" style="background-image: url(access/img/small-1.jpeg);"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Sáng 5.8, ghi nhận 3.943 ca mắc mới COVID-19, hơn 7,5 triệu liều vaccine đã tiêm
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__posts-sub">
+                                6h00 ngày 5.8, Bộ Y tế cho biết trên Hệ thống Quốc gia quản lý ca bệnh COVID-19 ghi nhận 3.943 ca nhiễm mới. 
+                                
+                                
+                            </div>
+                            <a href="" class="content-news-small__next">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row-1 -->
+                <div class="row content-news-row2">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row1-1..jpg)">
+
+                            </div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Đại dịch Covid-19 khiến thói hay quên trở nên trầm trọng hơn?
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Tôi bắt đầu với các tin tức hành lang từ những người nói với tôi rằng trí nhớ của họ dường như trở nên kém đi một cách thường xuyên hơn trong giai đoạn phong tỏa.
+                                Để viết bài báo đó, tôi đã nói chuyện với nhà nghiên cứu trí nhớ Catherine Loveday, giáo sư khoa học thần kinh nhận thức tại Đại học Westminster.
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row1-2.jpg)">
+
+                            </div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Việt Nam: Tranh cãi về tiêm vaccine Trung Quốc
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Tiêm vaccine phòng Covid-19 đang là vấn đề gây tranh cãi tại Việt Nam, đặc biệt là câu hỏi liệu người dân có thể từ chối tiêm Trung Quốc hay không.
+                                Việt Nam hiện đang đẩy mạnh việc tiêm vaccine giữa lúc dịch bệnh diễn tiến phức tạp tại nhiều nơi, đặc biệt là tại TP HCM, nơi hầu như số lượng ca bệnh và tử vong đã vượt ngoài tầm kiểm soát.
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row1-3.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Nhiều người nghe mách thuốc Tylenol xuất xứ từ Mỹ vì có khả năng điều trị COVID-19 tại nhà nên mua với giá đắt đỏ
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Sau cơn sốt thuốc chloroquin, aspirin ở năm thứ nhất COVID-19, thì năm thứ 2 người ta lại đua nhau tìm mua lo tích trữ xuyên tâm liên, corticoid. 
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row1-4.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-newspaper"></i>Tin tức
+                            </div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book far fa-calendar-alt"></i>6 tháng 8 năm 2021 
+                            </div>
+                            
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Sáng 6/8, Việt Nam thêm 4.009 ca mắc mới COVID-19, vượt mốc 8 triệu liều vaccine được tiêm
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc tiếp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <!-- row-2 -->
+                <div class="row content-news-row2">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row2-1.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Chuyến về nhà thành hành trình qua ba châu lục giữa Covid-19
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Khi Shibani Mahtani rời Hong Kong đến Anh, cô không lường được rằng mình sẽ phải đến cả Mỹ trong hành trình 5 tuần với 12 lần xét nghiệm.
+                                Shibani Mahtani là trưởng văn phòng Đông Nam Á của Washington Post và đã làm việc tại Hong Kong trong nhiều tháng qua.
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row2-2.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                TTO - Sáng 6-8, Bộ Y tế cho biết cả nước đã ghi nhận 4.009 ca mắc COVID-19, riêng TP.HCM 2.563 ca. 
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Sáng 6-8, trên Hệ thống quốc gia quản lý ca bệnh COVID-19 ghi nhận 4.009 ca nhiễm mới trong nước, gồm tại TP.HCM (2.563 ca), Bình Dương (322), 
+                                Long An (286), Tiền Giang (253), Đồng Nai (207), Đà Nẵng (77), 
+                                Vĩnh Long (63), Đồng Tháp (53). 
+
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row2-3.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-newspaper"></i>Tin tức
+                            </div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book far fa-calendar-alt"></i>31 tháng 7 năm 2021 
+                            </div>
+                            
+                            <div class="content-news-small__posts content-news-small__postssub">
+                               UNICEF hoan nghênh quỹ Vắc-xin phòng chống COVID-19 tại Việt Nam
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc tiếp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row2-4.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Ngoài tiêu cực, đại dịch Covid-19 còn mang đến nhiều tác động tích cực
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Các đồng sở hữu Trái Đất của chúng ta - hệ thực vật và động vật cũng như tự nhiên - đang tận hưởng những điểm tích cực từ loại virus chết người này, 
+                                đòi lại vùng đất mà chúng ta quên chia sẻ hoặc thay vào đó là cướp mất của chúng.
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <!-- row-3 -->
+                <div class="row content-news-row2">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row3-1.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                COVID-19 là gì và làm thế nào có thể tự bảo vệ bản thân trước đại dịch
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                1 loại virus mới có tên là corona đã gây ra hội chứng hô hấp cấp tính nghiêm trọng (SARS-CoV-2).
+                                Đây là nguyên nhân gây ra đợt bùng phát dịch bệnh ở Trung Quốc vào năm 2019. 
+                                Căn bệnh này được gọi là coronavirus 2019 (COVID-19).
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row3-2.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Bệnh đa xơ cứng và coronavirus (COVID-19)
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Các tổ chức y tế trong nước và quốc tế đang theo dõi sự phát triển của virus SARS-Cov 2 và 
+                                đang cố gắng đưa ra những khuyến nghị tốt nhất dành cho người bị bệnh đa xơ cứng 
+                                trước diễn biến phức tạp của dịch bệnh toàn cầu. 
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row3-3.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Vượt qua Covid-19 'Đồng lòng chống dịch': Trở về trong an toàn
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Những chuyến trở về quê nhà của bà con nghèo, gặp khó khăn bởi dịch Covid-19 tại TP.HCM trở nên an toàn, 
+                                quy củ và ý nghĩa hơn khi chính quyền địa phương đứng ra tổ chức, 
+                                có sự đồng hành của nhà xe và hội đồng hương các tỉnh, thành.
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/row3-4.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-newspaper"></i>Tin tức
+                            </div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book far fa-calendar-alt"></i>10 tháng 8 năm 2021
+                            </div>
+                            
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Ngay từ những ngày đầu đại dịch COVID-19 bùng phát trên thế giới và xuất hiện trong nước, 
+                                Việt Nam đã nhận được sự hỗ trợ, giúp đỡ quý báu của nhân dân, 
+                                Chính phủ các nước và các tổ chức quốc tế về trang thiết bị, 
+                                vật tư y tế phòng chống dịch.
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc tiếp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-12 content-news-small__full">
+                        <a class="content-news-small__full-link animation-hover">
+                            HIỂN THỊ THÊM
+                        </a>
+                    </div>
+                </div>
+                <div class="row content-dona">
+                    <div class="col l-o-2 m-0 c-0"></div>
+                    
+                    <div class="col l-8 m-12 c-12 content-dona-menu" id="quyengop">
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12 content-dona-menu-introduce">
+                                <h2 class="content-dona-menu-introduce__heading">
+                                    Quyên góp cho Việt Nam
+                                </h2>
+                                <p class="content-dona-menu-introduce__text">
+                                    Quyết tâm cùng chung sức đồng lòng đẩy lùi đại dịch COVID-19 trên toàn cầu.
+                                </p>
+                            </div>
+                            <div class="col l-12  m-12 c-12 content-dona-menu-table">
+                                <table class=" content-dona-menu-table-list" > 
+                                    <tr>
+                                        <th class="content-table-done content-table-done-sub animation-hover ">
+                                            Quyên góp hằng tháng
+                                        </th>
+                                        <th class="content-table-done animation-hover">
+                                            Quyên góp một lần
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-table-done content-table-done-sub animation-hover">
+                                            499.000đ
+                                        </td>
+                                        <td class="content-table-done animation-hover">
+                                            599.000đ
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-table-done animation-hover">
+                                            699.000đ
+                                        </td>
+                                        <td class="content-table-done  content-table-done-other ">
+                                            Khác
+                                            <form >
+                                                <input id="12" class="content-dona-menu-table-input" placeholder="$" required>
+                                                
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <p class="content-dona-menu-next-page">
+                                    Các bước tiếp theo sẽ dẩn bạn đến một trang an toàn, tại đó bạn sẽ thực hiện chuyển quà tặng của mình
+                                </p>
+                                <input type="submit" class="content-dona-menu-table-submit col l-12" value="TIẾP">
+                                
+                                <p class="content-dona-menu-next-page-para">Having an issue?<a href="" class="content-dona-menu-next-page-link">  Click here to donate</a></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-o-2 m-0 c-0"></div>
+                </div>
+                
+                <div class="row">
+                    <div  style="width: 100%" class="col l-12">
+                        <h1 class="content-news">
+                            Sinh viên và những lưu ý trong thời kỳ dịch bệnh COVID-19
+                        </h1>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col l-9 m-12 c-12 content-news-large hiden-on-tablet-mobile">
+                        <div class="row" style="border: 2px solid var(--main-color); border-radius: 6px;">
+                            <div class="col l-9 m-9 c-9 content-news-large__img-dad">
+                                <div class="content-news-large__img" style="background-image: url(access/img/big-2.jpg)"></div>
+                            </div>
+                            <div class="col l-3 m-3 c-3">
+                                <div class="content-news-large__shared">
+                                    <div class="content-news-large__icon">
+                                        <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                                    </div>
+                                    <h3 class="content-news-large__heading">
+                                        Rèn luyện kỹ năng mới trong mùa dịch
+                                    </h3>
+                                    <div class="content-news-large__posts">
+                                        Nếu bạn đang 'tạm thời ở nhà' vì ảnh hưởng của dịch bệnh thì có thể xem đây như một cơ hội nghỉ ngơi và trang bị cho mình những kĩ năng mới cho chặng đường sắp tới.
+                                    </div>
+                                    <a href="" class="content-news-large__next">
+                                       <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                                    </a>
+                                </div>
+                            </div>
+.
+                        </div>
+                    </div>   
+                    <div class="col m-6 c-12 on-tablet-mobile hiden-pc">
+                        <div class="content-news-small ">
+                            <div class="content-news-small__img" style="background-image: url(access/img/big-2.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Rèn luyện kỹ năng mới trong mùa dịch
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__posts-sub">
+                                Nếu bạn đang 'tạm thời ở nhà' vì ảnh hưởng của dịch bệnh thì có thể xem đây như một cơ hội nghỉ ngơi và trang bị cho mình những kĩ năng mới cho chặng đường sắp tới.
+                            </div>
+                            <a href="" class="content-news-small__next">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div> 
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub-1">
+                            <div class="content-news-small__img " style="background-image: url(access/img/sv-1.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                12 việc làm tại nhà mùa dịch COVID-19 giúp tăng thu nhập cho sinh viên
+                            </h3>
+                            <div class="content-news-small__posts" style="-webkit-line-clamp: 2;">
+                                Bạn cần tìm kiếm công việc để có thêm thu nhập trong giai đoạn dịch bệnh COVID-19 
+                                đang ảnh hưởng không nhỏ đến đời sống kinh tế của toàn xã hội?
+                                
+                            </div>
+                            <a href="" class="content-news-small__next">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row content-news-row2">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/sv-2.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Học thế nào trong mùa dịch để mang lại hiệu quả?
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Có lẽ đây là một năm học đáng nhớ của nhiều học sinh. 
+                                Do ảnh hưởng của dịch bệnh COVID-19, đến nay, 
+                                phần lớn học sinh trên cả nước đã nghỉ học kéo dài tháng rưỡi, 
+                                ảnh hưởng ít nhiều đến việc học tập của của các em, 
+                                đặc biệt là học sinh cuối cấp.
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/sv-3.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Ký túc xá làm gì để phòng chống dịch Covid-19?
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                heo ghi nhận của chúng tôi, dù được nghỉ vì dịch Covid-19 nhưng nhiều sinh viên vẫn quyết 
+                                định ở lại KTX ĐH Quốc gia TP.HCM để tìm việc làm thêm, đi thực tập... mà không về quê. 
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/sv-4.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                "Học gì, làm gì khi là sinh viên năm nhất?"
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Phải nói ngay là quãng thời gian là sinh viên là một trải nghiệm rất tuyệt vời, 
+                                khi mà bạn chỉ đến trường vài giờ 
+                                mỗi ngày và gần như chắc chắn bạn sẽ có nhiều hơn 1 ngày nghỉ trong tuần. 
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/sv-5.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Tập luyện để tăng sức đề kháng trong mùa dịch
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Tập luyện thể dục thể thao là điều vẫn được khuyến khích trong mùa dịch. Nhưng phải tập luyện thế nào khi hầu hết người dân đều phải ở nhà thực hiện chỉ thị giãn cách là câu hỏi khó với nhiều người.
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> 
+        </div>
+        <!-- Content-sub -->
+        <div class="content-sub">
+            <div class="grid wide">
+                <div class="row sm-gutter" id="hoatdong">
+                    <div class="col l-8 m-12 c-12 content-sub-img-dad">
+                        <div class="content-sub-img" style="background-image: url(access/img/big-3.jpg);"></div>
+                    </div>
+                    <div class="col l-4 m-12 c-12 content-sub-text">
+                       
+                            <h2 class="content-sub-text-heading">
+                                COVID-19 mang đến những tích cực bất ngờ cho sinh viên và thầy cô
+                            </h2>
+                            <p class="content-sub-text-para">
+                                Sau vài tuần, tôi nhận thấy học trực tuyến tốt hơn kỳ vọng nhiều. 
+                                Bài giảng được ghi hình nên tôi có thể xem lại khi cần và khi nào thấy tiện. 
+                                Thầy cô hỗ trợ nhiệt tình và hồi đáp nhanh nên tôi vẫn nhận được nhiều phản hồi từ họ như trước đây. 
+                                Tôi còn thấy mình có thể trao đổi với bạn bè tốt hơn vì tôi vốn rụt rè nên đôi khi giao tiếp trực tiếp tôi lại không nói gì nhiều”.
+                            </p>
+                            <a class="content-news-small__full-link content-news-small__full-link-sub animation-hover">
+                                HIỂN THỊ THÊM
+                            </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <h1 class="content-news content-news-wrod">
+                            Nhìn ra thế giới
+                        </h1>
+                    </div>
+                </div>
+                <div class="row content-news-row2">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/f0-1.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-newspaper"></i>Tin tức
+                            </div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book far fa-calendar-alt"></i>30 tháng 7 năm 2021
+                            </div>
+                            
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Theo trang mạng worldometer.info, trong vòng 24 giờ qua, 
+                                thế giới ghi nhận trên 662.000 ca bệnh COVID-19 và trên 9.500 ca tử vong. 
+                                Tổng số ca bệnh từ đầu dịch tới nay đã vượt 201 triệu ca, trong đó trên 4,27 triệu ca tử vong.
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc tiếp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/fo-2.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Cập nhật tình hình dịch COVID-19 trên thế giới sáng 6/8
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                
+                                Mỹ vẫn là quốc gia chịu tác động mạnh nhất của dịch bệnh, với 36.298.087 ca mắc và 631.860 ca tử vong. Tiếp đó là Ấn Độ với 31.855.783 ca mắc và 426.785 ca tử vong; Brazil với 20.066.587 ca mắc và 560.801 ca tử vong.
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/fo-4.jpeg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-book-open"></i>Bài viết  
+                            </div>
+                            <h3 class="content-news-small__heading">
+                                Số người mắc mới tăng mạnh ở hàng loạt quốc gia, Lào có số ca lây nhiễm trong cộng đồng cao trở lại
+                            </h3>
+                            <div class="content-news-small__posts content-news-small__postssub">
+                                Ngày 5/8, Bộ Y tế Lào cho biết, trong 24 giờ qua, nước này ghi nhận 206 ca mắc mới COVID-19, 
+                                trong đó ngoài 187 ca nhập cảnh được cách ly ngay, còn có 19 ca cộng đồng, đánh dấu sự gia tăng trở 
+                                lại của các ca lây nhiễm trong nước. Trong số các ca cộng đồng mới ghi nhận,
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc câu chuyện
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="content-news-small content-news-small-sub">
+                            <div class="content-news-small__img" style="background-image: url(access/img/fo-4.jpg)"></div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book fas fa-newspaper"></i>Tin tức
+                            </div>
+                            <div class="content-news-small__icon">
+                                <i class=" content-news-large__icon-book far fa-calendar-alt"></i>8 tháng 8 năm 2021
+                            </div>
+                            
+                            <div class="content-news-small__posts content-news-small__postssub">
+                               COVAX hỗ trợ thêm 1,18 triệu liều vắc-xin COVID-19 cho Việt Nam
+                                
+                            </div>
+                            <a href="" class="content-news-small__next content-news-small__nextsub">
+                               <i class=" fas fa-chevron-right content-news-large__next-icon"></i>Đọc tiếp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+              
+        
+        <!--================================= After content ===============================-->
+        <!-- =================================Befor footer ================================-->
+        <div class="footer" id="khampha">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6 m-12 c-12 footer-produce">
+                        <div class="col l-6 m-6 c-12">
+                            <h3 class="footer-produce-heading">
+                                Giới thiệu tác giả
+                            </h3>
+                            <ul class="footer-produce-list">
+                                <li class="footer-produce-item">
+                                    Name:<a href="" class="footer-produce-link"> Đỗ Quang San</a>
+                                </li>
+                                <li class="footer-produce-item">
+                                   Class:<a href="" class="footer-produce-link">20T3</a>
+                                </li>
+                                <li class="footer-produce-item">
+                                    My phone:<a href="" class="footer-produce-link">0867474667</a>
+                                </li>
+                                <li class="footer-produce-item">
+                                    Email:<a href="" class="footer-produce-link">doquangsan14022002@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-6 m-6 c-12 footer-produce-last">
+                            <h3 class="footer-produce-heading">
+                                Hành động
+                            </h3>
+                            <ul class="footer-produce-list">
+                                <li class="footer-produce-item">
+                                    <a href="" class="footer-produce-link">Sinh Viên Việt Nam</a>
+                                </li>
+                                <li class="footer-produce-item">
+                                    <a href="" class="footer-produce-link">Thông cáo báo chí</a>
+                                </li>
+                                <li class="footer-produce-item">
+                                    <a href="" class="footer-produce-link">Liên hệ</a>
+                                </li>
+                                <li class="footer-produce-item">
+                                    <a href="" class="footer-produce-link">Hổ trợ sinh viên</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12 footer-share">
+                        <a class=" footer-share-donations header-nav-item animation-hover" href="">
+                            QUYÊN GÓP
+                        </a>
+                        <div class="footer-share-icon">
+                            <a href="" class="footer-share-pulic">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="footer-share-pulic">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="footer-share-pulic">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="" class="footer-share-pulic">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <a href="" class="footer-share-contact">Liên hệ</a>
+                        <a class="footer-share-juridical" href="">Thông tin pháp lý</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==================================After footer================================== -->
+        
+    </div>
+    <script src="access/css/main.js"></script>
+</body>
+</html>
